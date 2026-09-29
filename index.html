@@ -4,138 +4,140 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Radhakrishnan — GTM Engineer</title>
-<meta name="description" content="GTM Engineer building AI-powered B2B outbound systems end to end: ICP research, TAM mapping, enrichment, email infrastructure, copy and deliverability. ~$1M in client revenue generated.">
+<meta name="description" content="GTM Engineer open to full-time remote roles, available in US and Canada time zones (EST, CST, MST, PST). Builds AI-powered B2B outbound systems end to end. ~$1M in client revenue generated.">
 <meta property="og:title" content="Radhakrishnan — GTM Engineer">
-<meta property="og:description" content="Outbound systems that turn cold lists into booked revenue. ~$1M generated across agencies, private equity and B2B services.">
+<meta property="og:description" content="Open to full-time GTM Engineer roles. Outbound systems that turn cold lists into booked revenue. ~$1M generated across agencies, private equity and B2B services.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://gtmradhakrishna.github.io/">
 <meta property="og:image" content="https://gtmradhakrishna.github.io/assets/img/krishna.jpg">
-<meta name="theme-color" content="#ffffff">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23111111'/><text x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial,sans-serif' font-weight='700' font-size='28' fill='%23ffffff'>RK</text></svg>">
+<meta name="theme-color" content="#1f1e1d">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23d97757'/><text x='50%25' y='57%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-size='30' fill='%231f1e1d'>RK</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#ffffff; --surface:#f7f7f5; --surface-2:#f1f1ee; --line:#e7e7e3; --line-2:#d9d9d4;
-  --text:#111111; --body:#3a3a3a; --muted:#6b6b6b; --dim:#8e8e8e;
-  --accent:#1f4fd8; --accent-soft:#eef2fd;
-  --radius:16px; --max:1120px;
-  --font:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif; --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  --bg:#1f1e1d; --surface:#262624; --card:#2a2927; --card-2:#302f2c; --line:#393834; --line-2:#4a4843;
+  --text:#f5f4ef; --body:#d5d2c8; --muted:#a3a096; --dim:#7f7c73;
+  --accent:#d97757; --accent-2:#e8906f; --accent-soft:rgba(217,119,87,.14); --ok:#7bc47f;
+  --radius:18px; --max:1120px;
+  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --sans:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;font-feature-settings:"cv11","ss01"}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
 @media (max-width:600px){.wrap{padding:0 16px}}
+::selection{background:var(--accent);color:var(--bg)}
 
 /* nav */
-.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.85);backdrop-filter:saturate(180%) blur(12px);-webkit-backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid transparent;transition:border-color .2s}
+.nav{position:sticky;top:0;z-index:50;background:rgba(31,30,29,.8);backdrop-filter:saturate(160%) blur(14px);-webkit-backdrop-filter:saturate(160%) blur(14px);border-bottom:1px solid transparent;transition:border-color .2s}
 .nav.scrolled{border-bottom-color:var(--line)}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
-.brand{display:flex;align-items:center;gap:10px;font-weight:600;letter-spacing:-.01em}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--serif);font-size:18px;font-weight:500}
 .brand img{width:30px;height:30px;border-radius:50%;object-fit:cover}
 .nav ul{display:flex;gap:28px;list-style:none;font-size:14px;color:var(--muted)}
 .nav ul a:hover{color:var(--text)}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:10px;font-weight:500;font-size:14.5px;transition:background .15s,border-color .15s,color .15s}
-.btn-primary{background:var(--text);color:#fff}
-.btn-primary:hover{background:#2b2b2b}
-.btn-ghost{border:1px solid var(--line-2);color:var(--text);background:#fff}
-.btn-ghost:hover{border-color:var(--text)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:10px;font-weight:500;font-size:14.5px;transition:background .15s,border-color .15s,color .15s,transform .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--accent);color:#1f1e1d}
+.btn-primary:hover{background:var(--accent-2)}
+.btn-ghost{border:1px solid var(--line-2);color:var(--text)}
+.btn-ghost:hover{border-color:var(--muted)}
 .nav .btn{padding:8px 14px}
 @media (max-width:820px){.nav ul{display:none}}
 
 /* hero */
-.hero{padding:80px 0 64px}
+.hero{position:relative;padding:80px 0 64px;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-260px;right:-200px;width:720px;height:720px;background:radial-gradient(closest-side,rgba(217,119,87,.16),transparent 70%);pointer-events:none}
+.hero .wrap{position:relative}
 .hero-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:56px;align-items:center}
-.status{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:5px 12px 5px 10px}
-.status .dot{width:7px;height:7px;border-radius:50%;background:#16a34a}
-h1{font-size:clamp(38px,5.4vw,62px);line-height:1.05;letter-spacing:-.035em;font-weight:600;margin:22px 0 20px}
-h1 span{color:var(--accent)}
+.status{display:inline-flex;align-items:center;gap:9px;font-size:13.5px;color:var(--body);border:1px solid var(--line-2);background:var(--surface);border-radius:999px;padding:6px 14px 6px 11px}
+.status .dot{width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 4px rgba(123,196,127,.16);animation:pulse 2.4s infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 7px transparent}}
+h1{font-family:var(--serif);font-size:clamp(40px,5.6vw,66px);line-height:1.06;letter-spacing:-.02em;font-weight:500;margin:22px 0 20px}
+h1 em{font-style:italic;color:var(--accent)}
 .lede{font-size:clamp(16.5px,1.5vw,18px);color:var(--body);max-width:58ch}
 .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
 .meta{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:24px;font-size:14px;color:var(--muted)}
 .meta span{display:inline-flex;align-items:center;gap:7px}
-.meta svg{width:15px;height:15px;color:var(--dim)}
+.meta svg{width:15px;height:15px;color:var(--accent)}
 .portrait{position:relative;justify-self:end;width:100%;max-width:380px}
-.portrait img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:50%;background:var(--surface)}
-.portrait .badge{position:absolute;left:-8px;bottom:22px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 14px;box-shadow:0 10px 30px rgba(17,17,17,.08);font-size:13px;color:var(--muted);line-height:1.35}
-.portrait .badge b{display:block;color:var(--text);font-size:18px;font-weight:600;letter-spacing:-.02em}
+.portrait img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:50%;border:1px solid var(--line-2)}
+.portrait .badge{position:absolute;left:-10px;bottom:24px;background:var(--card-2);border:1px solid var(--line-2);border-radius:14px;padding:11px 15px;box-shadow:0 14px 40px rgba(0,0,0,.35);font-size:13px;color:var(--muted);line-height:1.35}
+.portrait .badge b{display:block;color:var(--text);font-family:var(--serif);font-size:22px;font-weight:500}
 @media (max-width:860px){
-  .hero{padding:48px 0 48px}
-  .hero-grid{grid-template-columns:1fr;gap:36px}
-  .portrait{order:-1;justify-self:start;max-width:180px}
+  .hero{padding:44px 0 48px}
+  .hero-grid{grid-template-columns:1fr;gap:32px}
+  .portrait{order:-1;justify-self:start;max-width:170px}
   .portrait .badge{display:none}
 }
 
 /* stats */
-.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:64px}
-.stat{padding:26px 24px 26px 0}
-.stat + .stat{padding-left:24px;border-left:1px solid var(--line)}
-.stat b{display:block;font-size:clamp(28px,3.2vw,38px);font-weight:600;letter-spacing:-.035em;line-height:1.1}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-top:64px}
+.stat{background:var(--surface);padding:24px}
+.stat b{display:block;font-family:var(--serif);font-size:clamp(30px,3.4vw,42px);font-weight:500;letter-spacing:-.02em;line-height:1.1;color:var(--text)}
 .stat span{display:block;font-size:14px;color:var(--muted);margin-top:6px;line-height:1.45}
-@media (max-width:820px){
-  .stats{grid-template-columns:repeat(2,1fr)}
-  .stat,.stat + .stat{padding:22px 16px 22px 0;border-left:0}
-  .stat:nth-child(even){padding-left:16px;border-left:1px solid var(--line)}
-  .stat:nth-child(-n+2){border-bottom:1px solid var(--line)}
-}
+@media (max-width:820px){.stats{grid-template-columns:repeat(2,1fr)}.stat{padding:20px 16px}}
 
 /* sections */
 section{padding:88px 0}
 .alt{background:var(--surface)}
-.eyebrow{font-family:var(--mono);font-size:12.5px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
-h2{font-size:clamp(28px,3.6vw,40px);line-height:1.12;letter-spacing:-.03em;font-weight:600;max-width:22ch}
-.sub{color:var(--muted);max-width:62ch;margin-top:12px}
+.eyebrow{font-family:var(--mono);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+h2{font-family:var(--serif);font-size:clamp(30px,3.8vw,44px);line-height:1.12;letter-spacing:-.015em;font-weight:500;max-width:22ch}
+.sub{color:var(--muted);max-width:64ch;margin-top:12px}
 .head{margin-bottom:44px}
 
 /* case studies */
-.cases{display:grid;gap:24px}
-.case{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
-.case-top{display:grid;grid-template-columns:1fr 1.1fr}
-.case .body{padding:34px 34px 30px;display:flex;flex-direction:column}
-.tag{align-self:flex-start;font-family:var(--mono);font-size:11.5px;color:var(--muted);background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:3px 8px;margin-bottom:16px;text-transform:uppercase;letter-spacing:.04em}
-.case h3{font-size:22px;letter-spacing:-.02em;font-weight:600;line-height:1.25}
-.case .headline{font-size:clamp(22px,2.5vw,28px);font-weight:600;letter-spacing:-.03em;color:var(--accent);line-height:1.18;margin:10px 0 12px}
-.case p{color:var(--body);font-size:15px}
-.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:auto;padding-top:24px}
-.kpi{border-top:1px solid var(--line);padding-top:12px}
-.kpi b{display:block;font-size:20px;font-weight:600;letter-spacing:-.02em}
-.kpi span{font-size:12.5px;color:var(--muted);line-height:1.4;display:block}
-.shot{position:relative;background:var(--surface);border-left:1px solid var(--line);display:flex;flex-direction:column;justify-content:center;gap:12px;padding:20px;min-height:260px}
-.shot img{border-radius:10px;border:1px solid var(--line);background:#fff;cursor:zoom-in;transition:box-shadow .2s}
-.shot img:hover{box-shadow:0 8px 28px rgba(17,17,17,.10)}
-.case.flip .body{order:2}
-.case.flip .shot{border-left:0;border-right:1px solid var(--line)}
+.cases{display:grid;gap:28px}
+.case{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.case-head{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;padding:34px 34px 30px;align-items:end}
+.tag{display:inline-block;font-family:var(--mono);font-size:11.5px;color:var(--muted);border:1px solid var(--line-2);border-radius:6px;padding:3px 8px;margin-bottom:16px;text-transform:uppercase;letter-spacing:.05em}
+.case h3{font-family:var(--sans);font-size:15px;font-weight:600;color:var(--muted);letter-spacing:0}
+.case .headline{font-family:var(--serif);font-size:clamp(26px,3vw,36px);font-weight:500;letter-spacing:-.015em;color:var(--text);line-height:1.15;margin:6px 0 12px}
+.case .headline em{font-style:normal;color:var(--accent)}
+.case p{color:var(--body);font-size:15px;max-width:56ch}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.kpi{background:var(--card-2);padding:14px 14px 13px}
+.kpi b{display:block;font-family:var(--serif);font-size:24px;font-weight:500;letter-spacing:-.01em;line-height:1.2}
+.kpi span{font-size:12.5px;color:var(--muted);line-height:1.4;display:block;margin-top:2px}
+.shots{display:grid;gap:22px;padding:0 34px 34px}
+.shot{margin:0}
+.shot img{width:100%;border-radius:12px;border:1px solid var(--line-2);background:#fff;cursor:zoom-in}
+.shot figcaption{display:flex;gap:10px;align-items:flex-start;margin-top:12px;font-size:14.5px;color:var(--body);line-height:1.55}
+.shot figcaption::before{content:"";flex:none;width:3px;align-self:stretch;border-radius:3px;background:var(--accent)}
+.shot figcaption b{color:var(--text);font-weight:600}
 /* email copy */
-.copy{border-top:1px solid var(--line);padding:26px 34px 30px;background:#fff}
-.copy-label{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
-.copy-label svg{width:15px;height:15px}
-.email{border:1px solid var(--line);border-radius:12px;background:var(--surface);padding:18px 20px;font-size:14.5px;color:var(--body);line-height:1.7;max-width:780px}
+.copy{border-top:1px solid var(--line);padding:26px 34px 32px;background:var(--surface)}
+.copy-label{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+.copy-label svg{width:15px;height:15px;color:var(--accent)}
+.email{border:1px solid var(--line-2);border-radius:12px;background:var(--card);padding:20px 22px;font-family:var(--serif);font-size:16.5px;color:var(--body);line-height:1.7;max-width:820px}
+.email p{max-width:none}
 .email p + p{margin-top:10px}
-.var{font-family:var(--mono);font-size:12.5px;color:var(--accent);background:var(--accent-soft);border-radius:5px;padding:1px 5px;white-space:nowrap}
+.var{font-family:var(--mono);font-size:12.5px;color:var(--accent-2);background:var(--accent-soft);border-radius:5px;padding:1px 6px;white-space:nowrap}
 @media (max-width:900px){
-  .case-top{grid-template-columns:1fr}
-  .case.flip .body{order:0}
-  .shot,.case.flip .shot{border:0;border-top:1px solid var(--line)}
-  .case .body{padding:26px 22px}
-  .copy{padding:22px}
+  .case-head{grid-template-columns:1fr;gap:22px;padding:26px 20px 22px}
+  .shots{padding:0 20px 24px}
+  .copy{padding:22px 20px 26px}
+  .kpi b{font-size:20px}
 }
-.mini-cases{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:24px}
-.mini{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px}
-.mini b{display:block;font-size:28px;font-weight:600;letter-spacing:-.03em;line-height:1.1}
+.mini-cases{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:28px}
+.mini{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.mini b{display:block;font-family:var(--serif);font-size:30px;font-weight:500;letter-spacing:-.015em;line-height:1.1}
 .mini h4{font-size:15px;margin:10px 0 6px;font-weight:600}
 .mini p{font-size:14px;color:var(--muted)}
 @media (max-width:900px){.mini-cases{grid-template-columns:1fr}}
 
 /* process */
-.steps{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line);counter-reset:s}
-.step{padding:24px 22px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);transition:background .2s}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;counter-reset:s}
+.step{background:var(--bg);padding:24px 22px;transition:background .2s}
 .step:hover{background:var(--surface)}
 .step::before{counter-increment:s;content:counter(s,decimal-leading-zero);font-family:var(--mono);font-size:12.5px;color:var(--accent);display:block;margin-bottom:22px}
-.step h4{font-size:16px;font-weight:600;letter-spacing:-.01em;line-height:1.3;margin-bottom:8px}
+.step h4{font-family:var(--serif);font-size:18px;font-weight:500;line-height:1.25;margin-bottom:8px}
 .step p{font-size:13.5px;color:var(--muted);line-height:1.55}
 @media (max-width:1000px){.steps{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:520px){.steps{grid-template-columns:1fr}}
@@ -145,13 +147,13 @@ h2{font-size:clamp(28px,3.6vw,40px);line-height:1.12;letter-spacing:-.03em;font-
 .role{display:grid;grid-template-columns:220px 1fr;gap:32px;padding:32px 0;border-bottom:1px solid var(--line)}
 .role .when{font-size:14px;color:var(--muted)}
 .role .when b{display:block;color:var(--text);font-weight:500;font-size:14.5px;margin-bottom:2px}
-.role h3{font-size:20px;font-weight:600;letter-spacing:-.02em}
-.role h3 small{font-size:15px;font-weight:400;color:var(--muted);margin-left:6px}
+.role h3{font-family:var(--serif);font-size:23px;font-weight:500}
+.role h3 small{font-family:var(--sans);font-size:15px;font-weight:400;color:var(--muted);margin-left:6px}
 .role .intro{color:var(--muted);margin-top:6px;font-size:15px}
 .role ul{list-style:none;margin-top:14px;display:grid;gap:8px}
 .role li{position:relative;padding-left:18px;color:var(--body);font-size:15px}
-.role li::before{content:"";position:absolute;left:0;top:.7em;width:6px;height:6px;border-radius:50%;background:var(--line-2)}
-.now{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;background:var(--accent-soft);color:var(--accent);padding:2px 8px;border-radius:6px;margin-left:8px;vertical-align:middle}
+.role li::before{content:"";position:absolute;left:0;top:.7em;width:6px;height:6px;border-radius:50%;background:var(--accent);opacity:.75}
+.now{display:inline-block;font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;background:var(--accent-soft);color:var(--accent-2);padding:2px 8px;border-radius:6px;margin-left:8px;vertical-align:middle}
 @media (max-width:760px){.role{grid-template-columns:1fr;gap:8px}}
 
 /* stack */
@@ -159,39 +161,50 @@ h2{font-size:clamp(28px,3.6vw,40px);line-height:1.12;letter-spacing:-.03em;font-
 .stack-row{display:grid;grid-template-columns:170px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
 .stack-row h4{font-size:13.5px;font-weight:500;color:var(--muted);padding-top:5px}
 .chips{display:flex;flex-wrap:wrap;gap:6px;align-items:flex-start;align-content:flex-start}
-.chip{font-size:13.5px;padding:4px 11px;border-radius:7px;background:#fff;border:1px solid var(--line);color:var(--text)}
+.chip{font-size:13.5px;padding:4px 11px;border-radius:7px;background:var(--card);border:1px solid var(--line-2);color:var(--text)}
 @media (max-width:860px){.stack{grid-template-columns:1fr}.stack-row{grid-template-columns:1fr;gap:10px}}
 .skills{display:flex;flex-wrap:wrap;gap:6px;margin-top:32px}
 
 /* creds */
 .creds{display:grid;grid-template-columns:1fr 2fr;gap:24px}
-.cred-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px}
-.cred-card h3{font-size:18px;font-weight:600;letter-spacing:-.02em;margin-bottom:6px}
+.cred-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px}
+.cred-card h3{font-family:var(--serif);font-size:21px;font-weight:500;margin-bottom:6px}
 .cred-card p{color:var(--muted);font-size:15px}
 .cert-list{display:grid;grid-template-columns:repeat(2,1fr);gap:0 28px;list-style:none}
 .cert-list li{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);font-size:15px}
 .cert-list li span{color:var(--muted);font-size:14px;white-space:nowrap}
 @media (max-width:860px){.creds{grid-template-columns:1fr}.cert-list{grid-template-columns:1fr}}
 
-/* contact */
-.contact{text-align:center;padding:104px 0}
-.contact h2{margin:0 auto;max-width:20ch}
-.contact .sub{margin:14px auto 0}
-.contact .cta{justify-content:center}
+/* hire */
+.hire{position:relative;padding:112px 0;overflow:hidden;text-align:center}
+.hire::before{content:"";position:absolute;left:50%;top:50%;width:900px;height:900px;transform:translate(-50%,-50%);background:radial-gradient(closest-side,rgba(217,119,87,.15),transparent 70%);pointer-events:none}
+.hire .wrap{position:relative}
+.hire h2{font-size:clamp(38px,6vw,72px);line-height:1.05;letter-spacing:-.025em;max-width:16ch;margin:0 auto}
+.hire h2 em{font-style:italic;color:var(--accent)}
+.hire .sub{margin:20px auto 0;font-size:17.5px;color:var(--body);max-width:58ch}
+.hire .cta{justify-content:center;margin-top:34px}
+.hire .btn{padding:13px 22px;font-size:15px}
+.avail{display:inline-grid;grid-template-columns:auto auto;gap:18px 40px;margin:48px auto 0;padding:24px 30px;border:1px solid var(--line-2);border-radius:var(--radius);background:rgba(38,38,36,.7);text-align:left}
+.avail h4{font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:500;margin-bottom:10px}
+.tz{display:flex;flex-wrap:wrap;gap:6px}
+.tz span{font-family:var(--mono);font-size:13px;padding:5px 11px;border-radius:7px;border:1px solid var(--line-2);background:var(--card);color:var(--text)}
+.tz span.hl{border-color:rgba(217,119,87,.55);background:var(--accent-soft);color:var(--accent-2)}
+.avail p{font-size:15px;color:var(--body)}
+@media (max-width:700px){.avail{grid-template-columns:1fr;padding:20px}.hire{padding:80px 0}}
 footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-size:14px}
 footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 
 /* lightbox */
-dialog{border:0;padding:0;background:transparent;max-width:min(1400px,94vw);max-height:92vh;margin:auto}
-dialog::backdrop{background:rgba(17,17,17,.78);backdrop-filter:blur(3px)}
-dialog img{max-height:84vh;width:auto;border-radius:12px;background:#fff}
-dialog figcaption{color:#e5e5e5;font-size:14px;text-align:center;margin-top:12px}
-dialog button{position:fixed;top:18px;right:18px;width:40px;height:40px;border-radius:50%;border:0;background:#fff;color:var(--text);font-size:20px;cursor:pointer}
+dialog{border:0;padding:0;background:transparent;max-width:min(1500px,96vw);max-height:94vh;margin:auto}
+dialog::backdrop{background:rgba(10,10,9,.88);backdrop-filter:blur(3px)}
+dialog img{max-height:86vh;width:auto;border-radius:12px;background:#fff}
+dialog figcaption{color:#d5d2c8;font-size:14px;text-align:center;margin-top:12px}
+dialog button{position:fixed;top:18px;right:18px;width:40px;height:40px;border-radius:50%;border:1px solid var(--line-2);background:var(--card);color:var(--text);font-size:20px;cursor:pointer}
 
 /* reveal */
 .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
 .reveal.in{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.status .dot{animation:none}}
 </style>
 </head>
 <body>
@@ -205,7 +218,7 @@ dialog button{position:fixed;top:18px;right:18px;width:40px;height:40px;border-r
       <li><a href="#experience">Experience</a></li>
       <li><a href="#stack">Stack</a></li>
     </ul>
-    <a href="#contact" class="btn btn-primary">Get in touch</a>
+    <a href="#hire" class="btn btn-primary">Hire me</a>
   </div>
 </nav>
 
@@ -213,18 +226,18 @@ dialog button{position:fixed;top:18px;right:18px;width:40px;height:40px;border-r
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <span class="status"><span class="dot"></span>GTM Engineer at ScaleSprint</span>
-        <h1>Outbound systems that turn cold lists into <span>booked revenue.</span></h1>
+        <span class="status"><span class="dot"></span>Open to full-time GTM Engineer roles</span>
+        <h1>Outbound systems that turn cold lists into <em>booked revenue.</em></h1>
         <p class="lede">I'm Radhakrishnan, a GTM Engineer with 3 years of hands-on B2B outbound for clients in the US, Canada, UK, UAE and Australia. I run the full motion end to end: ICP research, TAM mapping, list building, enrichment, email infrastructure, copy, launch and deliverability. Right now I'm building GTM automation in Claude Code that ties sourcing, enrichment, qualification and sending into 1 workflow.</p>
         <div class="cta">
-          <a href="#results" class="btn btn-primary">See the results
+          <a href="#hire" class="btn btn-primary">Hire me
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="#results" class="btn btn-ghost">See the results</a>
           <a href="https://www.linkedin.com/in/gtm-krishna" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
-          <a href="mailto:gtmradhakrishna@gmail.com" class="btn btn-ghost">Email me</a>
         </div>
         <div class="meta">
-          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Chennai, India · works remote</span>
-          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>US · CAN · UK · UAE · AUS</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Available in EST · CST · MST · PST</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Remote · based in Chennai, India</span>
         </div>
       </div>
       <div class="portrait">
@@ -247,27 +260,33 @@ dialog button{position:fixed;top:18px;right:18px;width:40px;height:40px;border-r
     <div class="head reveal">
       <p class="eyebrow">Client results</p>
       <h2>Pipeline you can see in the dashboards.</h2>
-      <p class="sub">A sample of campaigns I've owned end to end. Screenshots are straight from the sending platforms, and you can click any of them to enlarge it.</p>
+      <p class="sub">A sample of campaigns I've owned end to end. Every screenshot comes straight from the sending platform, with a note underneath explaining what it shows.</p>
     </div>
 
     <div class="cases">
       <article class="case reveal">
-        <div class="case-top">
-          <div class="body">
+        <div class="case-head">
+          <div>
             <span class="tag">US digital marketing agency</span>
             <h3>Global Growth Networks</h3>
-            <div class="headline">5 clients closed · $180K revenue in 60 days</div>
-            <p>Cold email to waterproofing companies, with separate campaigns for each title band (Owner/CEO, VP/Director, Manager) so I could see exactly which persona was landing. The best segments hit up to 15% reply rates with 0 bounces.</p>
-            <div class="kpis">
-              <div class="kpi"><b>1,550</b><span>accounts contacted in month 1</span></div>
-              <div class="kpi"><b>17 → 9</b><span>qualified leads → booked meetings</span></div>
-              <div class="kpi"><b>$108K</b><span>revenue from 3 clients in month 1</span></div>
-            </div>
+            <div class="headline"><em>5 clients closed</em> and $180K revenue in 60 days</div>
+            <p>Cold email to waterproofing companies, with separate campaigns for each title band (Owner/CEO, VP/Director, Manager) so I could see exactly which persona was landing.</p>
           </div>
-          <div class="shot">
-            <img src="assets/img/ggn-analytics.jpg" data-caption="Global Growth Networks: Smartlead global analytics, month 1" alt="Smartlead analytics showing 1,550 leads reached, 5,658 emails sent and 17 positive replies" loading="lazy">
-            <img src="assets/img/smartlead-campaigns.jpg" data-caption="Global Growth Networks: campaigns split by persona, with reply rates up to 15.08%" alt="Smartlead campaign list split by persona showing reply rates between 4.76% and 15.08% with 0 bounces" loading="lazy">
+          <div class="kpis">
+            <div class="kpi"><b>1,550</b><span>accounts contacted in month 1</span></div>
+            <div class="kpi"><b>17 → 9</b><span>qualified leads → meetings</span></div>
+            <div class="kpi"><b>$108K</b><span>revenue from 3 clients in month 1</span></div>
           </div>
+        </div>
+        <div class="shots">
+          <figure class="shot">
+            <img src="assets/img/ggn-analytics.jpg" alt="Smartlead global analytics showing 1,550 leads reached, 5,658 emails sent, 147 replies, 17 positive replies and 0 bounces" loading="lazy">
+            <figcaption><span><b>Month 1 in Smartlead (Oct 15 – Nov 15).</b> 1,550 leads reached with 5,658 emails, 147 replies and 17 positive replies, with 0 bounces. Those 17 leads turned into 9 booked meetings and 3 closed clients at $36K each.</span></figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/img/smartlead-campaigns.jpg" alt="Smartlead campaign list split by persona showing reply rates between 4.76% and 15.08% with 0 bounces" loading="lazy">
+            <figcaption><span><b>1 campaign per persona.</b> Owner/CEO, VP/Director and Manager each ran as their own sequence, from both standard lists and Clay-enriched lists. VP/Director reached a 15.08% reply rate and Owner/CEO 13.51%, with 0 bounces across every campaign.</span></figcaption>
+          </figure>
         </div>
         <div class="copy">
           <div class="copy-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Email copy</div>
@@ -279,22 +298,25 @@ dialog button{position:fixed;top:18px;right:18px;width:40px;height:40px;border-r
         </div>
       </article>
 
-      <article class="case flip reveal">
-        <div class="case-top">
-          <div class="body">
+      <article class="case reveal">
+        <div class="case-head">
+          <div>
             <span class="tag">US-based private equity firm</span>
             <h3>Liberty Bay Capital</h3>
-            <div class="headline">164 leads generated</div>
+            <div class="headline"><em>164 leads</em> generated</div>
             <p>Targeted investment bankers with the firm's exact deal criteria, so every conversation started on-thesis rather than on volume.</p>
-            <div class="kpis">
-              <div class="kpi"><b>21.4K</b><span>emails sent</span></div>
-              <div class="kpi"><b>5.06%</b><span>reply rate</span></div>
-              <div class="kpi"><b>164</b><span>leads generated</span></div>
-            </div>
           </div>
-          <div class="shot">
-            <img src="assets/img/liberty-bay-analytics.jpg" data-caption="Liberty Bay Capital: Instantly analytics, 6-month view (5.06% reply rate across 21.4K sends)" alt="Instantly analytics showing 21.4K sent, 5.06% reply rate and 164 opportunities" loading="lazy">
+          <div class="kpis">
+            <div class="kpi"><b>21.4K</b><span>emails sent</span></div>
+            <div class="kpi"><b>5.06%</b><span>reply rate</span></div>
+            <div class="kpi"><b>164</b><span>leads generated</span></div>
           </div>
+        </div>
+        <div class="shots">
+          <figure class="shot">
+            <img src="assets/img/liberty-bay-analytics.jpg" alt="Instantly analytics showing 21.4K sent, 5.06% reply rate and 164 opportunities" loading="lazy">
+            <figcaption><span><b>Instantly analytics, 6-month view.</b> 21.4K emails sent to investment bankers at a 5.06% reply rate, producing 164 leads for the firm's deal pipeline.</span></figcaption>
+          </figure>
         </div>
         <div class="copy">
           <div class="copy-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Email copy</div>
@@ -307,41 +329,50 @@ dialog button{position:fixed;top:18px;right:18px;width:40px;height:40px;border-r
       </article>
 
       <article class="case reveal">
-        <div class="case-top">
-          <div class="body">
+        <div class="case-head">
+          <div>
             <span class="tag">US PPC agency</span>
             <h3>The Bolton Agency</h3>
-            <div class="headline">2 clients closed · $72K added in 30 days</div>
+            <div class="headline"><em>2 clients closed</em> and $72K added in 30 days</div>
             <p>The first 5 appointments were booked inside week 1. Leads grew from 16 in month 1 to 42 in month 2 as the campaign scaled.</p>
-            <div class="kpis">
-              <div class="kpi"><b>16</b><span>opportunities in the first 7 days</span></div>
-              <div class="kpi"><b>42</b><span>leads in month 2</span></div>
-              <div class="kpi"><b>$72K</b><span>new deals in 30 days</span></div>
-            </div>
           </div>
-          <div class="shot">
-            <img src="assets/img/bolton-week1.jpg" data-caption="The Bolton Agency: week 1 in Instantly (16 opportunities)" alt="Instantly analytics for the first week showing 2.6K sent, 4.5% reply rate and 16 opportunities" loading="lazy">
-            <img src="assets/img/bolton-month2.jpg" data-caption="The Bolton Agency: month 2 in Instantly (42 opportunities)" alt="Instantly analytics for month 2 showing 17.7K sent and 42 opportunities" loading="lazy">
+          <div class="kpis">
+            <div class="kpi"><b>16</b><span>opportunities in the first 7 days</span></div>
+            <div class="kpi"><b>42</b><span>leads in month 2</span></div>
+            <div class="kpi"><b>$72K</b><span>new deals in 30 days</span></div>
           </div>
+        </div>
+        <div class="shots">
+          <figure class="shot">
+            <img src="assets/img/bolton-week1.jpg" alt="Instantly analytics for the first week showing 2.6K sent, 76.9% open rate, 4.5% reply rate and 16 opportunities" loading="lazy">
+            <figcaption><span><b>Week 1 in Instantly (Jan 3 – Jan 9).</b> 2.6K emails at a 76.9% open rate and 4.5% reply rate produced 16 opportunities in the first 7 days.</span></figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/img/bolton-month2.jpg" alt="Instantly analytics for month 2 showing 17.7K sent, 47.1% open rate, 2.3% reply rate and 42 opportunities" loading="lazy">
+            <figcaption><span><b>Month 2 in Instantly (Feb 12 – Mar 13).</b> Volume scaled to 17.7K emails, bringing in 42 opportunities.</span></figcaption>
+          </figure>
         </div>
       </article>
 
-      <article class="case flip reveal">
-        <div class="case-top">
-          <div class="body">
+      <article class="case reveal">
+        <div class="case-head">
+          <div>
             <span class="tag">Canada · PPC agency</span>
             <h3>Diamond+</h3>
-            <div class="headline">$168K pipeline · 48 qualified leads in 70 days</div>
+            <div class="headline"><em>$168K pipeline</em> and 48 qualified leads in 70 days</div>
             <p>Multi-segment cold email run through Instantly, with daily opportunity reporting sent straight to the client's team channel.</p>
-            <div class="kpis">
-              <div class="kpi"><b>26.4K</b><span>emails sent</span></div>
-              <div class="kpi"><b>4.9%</b><span>reply rate</span></div>
-              <div class="kpi"><b>48</b><span>opportunities</span></div>
-            </div>
           </div>
-          <div class="shot">
-            <img src="assets/img/diamond-analytics.jpg" data-caption="Diamond+: Instantly analytics, Jan 1 – Mar 31" alt="Instantly analytics showing 26.4K sent, 4.9% reply rate and 48 opportunities worth $168,000" loading="lazy">
+          <div class="kpis">
+            <div class="kpi"><b>26.4K</b><span>emails sent</span></div>
+            <div class="kpi"><b>4.9%</b><span>reply rate</span></div>
+            <div class="kpi"><b>48</b><span>opportunities</span></div>
           </div>
+        </div>
+        <div class="shots">
+          <figure class="shot">
+            <img src="assets/img/diamond-analytics.jpg" alt="Instantly analytics showing 26.4K sent, 52.3% open rate, 4.9% reply rate and 48 opportunities worth $168,000" loading="lazy">
+            <figcaption><span><b>Instantly analytics (Jan 1 – Mar 31).</b> 26.4K emails at a 52.3% open rate and 4.9% reply rate produced 48 opportunities worth $168,000 in pipeline.</span></figcaption>
+          </figure>
         </div>
       </article>
     </div>
@@ -495,14 +526,24 @@ dialog button{position:fixed;top:18px;right:18px;width:40px;height:40px;border-r
   </div>
 </section>
 
-<section id="contact" class="contact">
+<section id="hire" class="hire">
   <div class="wrap reveal">
-    <p class="eyebrow">Let's talk</p>
-    <h2>Need pipeline that doesn't depend on referrals?</h2>
-    <p class="sub">I'm happy to walk through any of these campaigns in detail, or map out what an outbound system could look like for your team.</p>
+    <p class="eyebrow">Open to work</p>
+    <h2>Want to work with me? <em>Let's talk.</em></h2>
+    <p class="sub">I'm looking for a full-time GTM Engineer role on a team that wants outbound to be a real, measurable growth channel. If you're hiring, I'd love to show you how I'd build yours.</p>
     <div class="cta">
-      <a href="mailto:gtmradhakrishna@gmail.com" class="btn btn-primary">gtmradhakrishna@gmail.com</a>
-      <a href="https://www.linkedin.com/in/gtm-krishna" target="_blank" rel="noopener" class="btn btn-ghost">Connect on LinkedIn</a>
+      <a href="mailto:gtmradhakrishna@gmail.com?subject=GTM%20Engineer%20role" class="btn btn-primary">Email me about a role</a>
+      <a href="https://www.linkedin.com/in/gtm-krishna" target="_blank" rel="noopener" class="btn btn-ghost">Message me on LinkedIn</a>
+    </div>
+    <div class="avail">
+      <div>
+        <h4>Available in your time zone</h4>
+        <div class="tz"><span class="hl">EST</span><span class="hl">CST</span><span class="hl">MST</span><span class="hl">PST</span><span>GMT</span><span>GST</span></div>
+      </div>
+      <div>
+        <h4>How I work</h4>
+        <p>Full-time, remote. I work US &amp; Canada business hours.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -510,7 +551,7 @@ dialog button{position:fixed;top:18px;right:18px;width:40px;height:40px;border-r
 <footer>
   <div class="wrap">
     <span>© <span id="yr">2026</span> Radhakrishnan · GTM Engineer</span>
-    <span>Chennai, India · Remote worldwide</span>
+    <span><a href="mailto:gtmradhakrishna@gmail.com">gtmradhakrishna@gmail.com</a></span>
   </div>
 </footer>
 
@@ -531,7 +572,7 @@ dialog button{position:fixed;top:18px;right:18px;width:40px;height:40px;border-r
   if ('IntersectionObserver' in window) {
     const io = new IntersectionObserver(entries => entries.forEach(e => {
       if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
-    }), {threshold:.1, rootMargin:'0px 0px -40px 0px'});
+    }), {threshold:.05, rootMargin:'0px 0px -40px 0px'});
     els.forEach(el => io.observe(el));
   } else els.forEach(el => el.classList.add('in'));
 
@@ -539,7 +580,8 @@ dialog button{position:fixed;top:18px;right:18px;width:40px;height:40px;border-r
   const dImg = dlg.querySelector('img'), dCap = dlg.querySelector('figcaption');
   document.querySelectorAll('.shot img').forEach(img => img.addEventListener('click', () => {
     dImg.src = img.src; dImg.alt = img.alt;
-    dCap.textContent = img.dataset.caption || '';
+    const cap = img.closest('.shot').querySelector('figcaption');
+    dCap.textContent = cap ? cap.textContent : '';
     if (dlg.showModal) dlg.showModal(); else window.open(img.src, '_blank');
   }));
   dlg.addEventListener('click', e => { if (e.target === dlg || e.target.tagName === 'BUTTON') dlg.close(); });
