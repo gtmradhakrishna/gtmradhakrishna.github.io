@@ -9,183 +9,196 @@
 <meta property="og:description" content="Outbound systems that turn cold lists into booked revenue. ~$1M generated across agencies, private equity and B2B services.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://gtmradhakrishna.github.io/">
-<meta property="og:image" content="https://gtmradhakrishna.github.io/assets/img/ggn-analytics.jpg">
-<meta name="theme-color" content="#0b0d0c">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23c6f36b'/><text x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial,sans-serif' font-weight='700' font-size='30' fill='%230b0d0c'>RK</text></svg>">
+<meta property="og:image" content="https://gtmradhakrishna.github.io/assets/img/krishna.jpg">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23111111'/><text x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial,sans-serif' font-weight='700' font-size='28' fill='%23ffffff'>RK</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#0b0d0c; --bg-2:#111412; --card:#151917; --line:#232925; --line-2:#2f3631;
-  --text:#eef2ee; --muted:#9aa49d; --dim:#6c756f;
-  --accent:#c6f36b; --accent-ink:#0b0d0c; --accent-soft:rgba(198,243,107,.12);
-  --radius:18px; --max:1120px;
-  --display:"Space Grotesk",system-ui,sans-serif; --body:"Inter",system-ui,-apple-system,sans-serif;
+  --bg:#ffffff; --surface:#f7f7f5; --surface-2:#f1f1ee; --line:#e7e7e3; --line-2:#d9d9d4;
+  --text:#111111; --body:#3a3a3a; --muted:#6b6b6b; --dim:#8e8e8e;
+  --accent:#1f4fd8; --accent-soft:#eef2fd;
+  --radius:16px; --max:1120px;
+  --font:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif; --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{background:var(--bg);color:var(--text);font-family:var(--body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;font-feature-settings:"cv11","ss01"}
 a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
 @media (max-width:600px){.wrap{padding:0 16px}}
 
 /* nav */
-.nav{position:sticky;top:0;z-index:50;background:rgba(11,13,12,.72);backdrop-filter:saturate(160%) blur(14px);-webkit-backdrop-filter:saturate(160%) blur(14px);border-bottom:1px solid transparent;transition:border-color .2s}
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.85);backdrop-filter:saturate(180%) blur(12px);-webkit-backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid transparent;transition:border-color .2s}
 .nav.scrolled{border-bottom-color:var(--line)}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
-.brand{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:700;letter-spacing:-.01em}
-.brand .mark{width:30px;height:30px;border-radius:9px;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-size:13px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:600;letter-spacing:-.01em}
+.brand img{width:30px;height:30px;border-radius:50%;object-fit:cover}
 .nav ul{display:flex;gap:28px;list-style:none;font-size:14px;color:var(--muted)}
 .nav ul a:hover{color:var(--text)}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:999px;font-weight:600;font-size:14px;transition:transform .15s,background .15s,border-color .15s}
-.btn:hover{transform:translateY(-1px)}
-.btn-primary{background:var(--accent);color:var(--accent-ink)}
-.btn-ghost{border:1px solid var(--line-2);color:var(--text)}
-.btn-ghost:hover{border-color:var(--muted)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:10px;font-weight:500;font-size:14.5px;transition:background .15s,border-color .15s,color .15s}
+.btn-primary{background:var(--text);color:#fff}
+.btn-primary:hover{background:#2b2b2b}
+.btn-ghost{border:1px solid var(--line-2);color:var(--text);background:#fff}
+.btn-ghost:hover{border-color:var(--text)}
 .nav .btn{padding:8px 14px}
 @media (max-width:820px){.nav ul{display:none}}
 
 /* hero */
-.hero{position:relative;padding:96px 0 72px;overflow:hidden}
-.hero::before{content:"";position:absolute;inset:-20% -10% auto auto;width:680px;height:680px;background:radial-gradient(closest-side,rgba(198,243,107,.16),transparent 70%);pointer-events:none}
-.hero::after{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse at 70% 20%,#000 0%,transparent 60%);-webkit-mask-image:radial-gradient(ellipse at 70% 20%,#000 0%,transparent 60%);opacity:.5;pointer-events:none}
-.hero .wrap{position:relative;z-index:1}
-.pill{display:inline-flex;align-items:center;gap:8px;padding:6px 12px 6px 8px;border:1px solid var(--line-2);border-radius:999px;font-size:13px;color:var(--muted);background:var(--bg-2)}
-.pill .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--accent-soft);animation:pulse 2.4s infinite}
-@keyframes pulse{50%{box-shadow:0 0 0 7px transparent}}
-h1{font-family:var(--display);font-weight:700;font-size:clamp(40px,6.4vw,76px);line-height:1.02;letter-spacing:-.035em;margin:24px 0 22px;max-width:14ch}
-h1 em{font-style:normal;color:var(--accent)}
-.lede{font-size:clamp(17px,1.6vw,19px);color:var(--muted);max-width:60ch}
-.lede strong{color:var(--text);font-weight:500}
-.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
-.meta{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:28px;font-size:14px;color:var(--dim)}
+.hero{padding:80px 0 64px}
+.hero-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:56px;align-items:center}
+.status{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:5px 12px 5px 10px}
+.status .dot{width:7px;height:7px;border-radius:50%;background:#16a34a}
+h1{font-size:clamp(38px,5.4vw,62px);line-height:1.05;letter-spacing:-.035em;font-weight:600;margin:22px 0 20px}
+h1 span{color:var(--accent)}
+.lede{font-size:clamp(16.5px,1.5vw,18px);color:var(--body);max-width:58ch}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.meta{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:24px;font-size:14px;color:var(--muted)}
 .meta span{display:inline-flex;align-items:center;gap:7px}
-.meta svg{width:15px;height:15px}
+.meta svg{width:15px;height:15px;color:var(--dim)}
+.portrait{position:relative;justify-self:end;width:100%;max-width:380px}
+.portrait img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:50%;background:var(--surface)}
+.portrait .badge{position:absolute;left:-8px;bottom:22px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 14px;box-shadow:0 10px 30px rgba(17,17,17,.08);font-size:13px;color:var(--muted);line-height:1.35}
+.portrait .badge b{display:block;color:var(--text);font-size:18px;font-weight:600;letter-spacing:-.02em}
+@media (max-width:860px){
+  .hero{padding:48px 0 48px}
+  .hero-grid{grid-template-columns:1fr;gap:36px}
+  .portrait{order:-1;justify-self:start;max-width:180px}
+  .portrait .badge{display:none}
+}
 
 /* stats */
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-top:64px}
-.stat{background:var(--bg-2);padding:26px 24px}
-.stat b{display:block;font-family:var(--display);font-size:clamp(28px,3.4vw,40px);font-weight:600;letter-spacing:-.03em;line-height:1.1}
-.stat b i{font-style:normal;color:var(--accent)}
-.stat span{font-size:14px;color:var(--muted)}
-@media (max-width:820px){.stats{grid-template-columns:repeat(2,1fr)}}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:64px}
+.stat{padding:26px 24px 26px 0}
+.stat + .stat{padding-left:24px;border-left:1px solid var(--line)}
+.stat b{display:block;font-size:clamp(28px,3.2vw,38px);font-weight:600;letter-spacing:-.035em;line-height:1.1}
+.stat span{display:block;font-size:14px;color:var(--muted);margin-top:6px;line-height:1.45}
+@media (max-width:820px){
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .stat,.stat + .stat{padding:22px 16px 22px 0;border-left:0}
+  .stat:nth-child(even){padding-left:16px;border-left:1px solid var(--line)}
+  .stat:nth-child(-n+2){border-bottom:1px solid var(--line)}
+}
 
 /* sections */
 section{padding:88px 0}
-.eyebrow{font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
-h2{font-family:var(--display);font-size:clamp(30px,4vw,46px);line-height:1.08;letter-spacing:-.03em;font-weight:600;max-width:20ch}
-.sub{color:var(--muted);max-width:62ch;margin-top:14px}
+.alt{background:var(--surface)}
+.eyebrow{font-family:var(--mono);font-size:12.5px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+h2{font-size:clamp(28px,3.6vw,40px);line-height:1.12;letter-spacing:-.03em;font-weight:600;max-width:22ch}
+.sub{color:var(--muted);max-width:62ch;margin-top:12px}
 .head{margin-bottom:44px}
-.divider{border-top:1px solid var(--line)}
 
 /* case studies */
-.cases{display:grid;gap:22px}
-.case{display:grid;grid-template-columns:1.05fr 1fr;gap:0;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:border-color .2s}
-.case:hover{border-color:var(--line-2)}
+.cases{display:grid;gap:24px}
+.case{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.case-top{display:grid;grid-template-columns:1fr 1.1fr}
 .case .body{padding:34px 34px 30px;display:flex;flex-direction:column}
-.tag{align-self:flex-start;font-size:12px;font-weight:600;color:var(--muted);border:1px solid var(--line-2);border-radius:999px;padding:4px 10px;margin-bottom:18px}
-.case h3{font-family:var(--display);font-size:24px;letter-spacing:-.02em;font-weight:600;line-height:1.2}
-.case .headline{font-family:var(--display);font-size:clamp(26px,3vw,34px);font-weight:600;letter-spacing:-.03em;color:var(--accent);line-height:1.1;margin:14px 0 12px}
-.case p{color:var(--muted);font-size:15px}
-.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:auto;padding-top:24px}
-.kpi{border-top:1px solid var(--line-2);padding-top:12px}
-.kpi b{display:block;font-family:var(--display);font-size:20px;font-weight:600;letter-spacing:-.02em}
-.kpi span{font-size:12.5px;color:var(--dim);line-height:1.35;display:block}
-.shot{position:relative;background:#060707;border-left:1px solid var(--line);display:flex;align-items:center;justify-content:center;padding:18px;cursor:zoom-in;min-height:260px}
-.shot img{border-radius:10px;border:1px solid var(--line);box-shadow:0 18px 50px rgba(0,0,0,.45);transition:transform .35s}
-.shot:hover img{transform:scale(1.015)}
-.shot .zoom{position:absolute;right:14px;bottom:14px;font-size:12px;color:var(--muted);background:rgba(11,13,12,.8);border:1px solid var(--line-2);padding:4px 9px;border-radius:999px}
-.shot.duo{flex-direction:column;gap:12px}
+.tag{align-self:flex-start;font-family:var(--mono);font-size:11.5px;color:var(--muted);background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:3px 8px;margin-bottom:16px;text-transform:uppercase;letter-spacing:.04em}
+.case h3{font-size:22px;letter-spacing:-.02em;font-weight:600;line-height:1.25}
+.case .headline{font-size:clamp(22px,2.5vw,28px);font-weight:600;letter-spacing:-.03em;color:var(--accent);line-height:1.18;margin:10px 0 12px}
+.case p{color:var(--body);font-size:15px}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:auto;padding-top:24px}
+.kpi{border-top:1px solid var(--line);padding-top:12px}
+.kpi b{display:block;font-size:20px;font-weight:600;letter-spacing:-.02em}
+.kpi span{font-size:12.5px;color:var(--muted);line-height:1.4;display:block}
+.shot{position:relative;background:var(--surface);border-left:1px solid var(--line);display:flex;flex-direction:column;justify-content:center;gap:12px;padding:20px;min-height:260px}
+.shot img{border-radius:10px;border:1px solid var(--line);background:#fff;cursor:zoom-in;transition:box-shadow .2s}
+.shot img:hover{box-shadow:0 8px 28px rgba(17,17,17,.10)}
 .case.flip .body{order:2}
 .case.flip .shot{border-left:0;border-right:1px solid var(--line)}
+/* email copy */
+.copy{border-top:1px solid var(--line);padding:26px 34px 30px;background:#fff}
+.copy-label{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+.copy-label svg{width:15px;height:15px}
+.email{border:1px solid var(--line);border-radius:12px;background:var(--surface);padding:18px 20px;font-size:14.5px;color:var(--body);line-height:1.7;max-width:780px}
+.email p + p{margin-top:10px}
+.var{font-family:var(--mono);font-size:12.5px;color:var(--accent);background:var(--accent-soft);border-radius:5px;padding:1px 5px;white-space:nowrap}
 @media (max-width:900px){
-  .case{grid-template-columns:1fr}
+  .case-top{grid-template-columns:1fr}
   .case.flip .body{order:0}
   .shot,.case.flip .shot{border:0;border-top:1px solid var(--line)}
   .case .body{padding:26px 22px}
+  .copy{padding:22px}
 }
-.mini-cases{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:22px}
-.mini{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
-.mini b{display:block;font-family:var(--display);font-size:30px;font-weight:600;letter-spacing:-.03em;color:var(--accent);line-height:1.1}
+.mini-cases{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:24px}
+.mini{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.mini b{display:block;font-size:28px;font-weight:600;letter-spacing:-.03em;line-height:1.1}
 .mini h4{font-size:15px;margin:10px 0 6px;font-weight:600}
 .mini p{font-size:14px;color:var(--muted)}
 @media (max-width:900px){.mini-cases{grid-template-columns:1fr}}
 
 /* process */
-.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;counter-reset:s}
-.step{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 20px;position:relative;transition:border-color .2s,transform .2s}
-.step:hover{border-color:var(--accent);transform:translateY(-2px)}
-.step::before{counter-increment:s;content:counter(s,decimal-leading-zero);font-family:var(--display);font-size:13px;font-weight:600;color:var(--accent);display:block;margin-bottom:26px}
-.step h4{font-family:var(--display);font-size:17px;font-weight:600;letter-spacing:-.01em;line-height:1.25;margin-bottom:8px}
-.step p{font-size:13.5px;color:var(--muted);line-height:1.5}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line);counter-reset:s}
+.step{padding:24px 22px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);transition:background .2s}
+.step:hover{background:var(--surface)}
+.step::before{counter-increment:s;content:counter(s,decimal-leading-zero);font-family:var(--mono);font-size:12.5px;color:var(--accent);display:block;margin-bottom:22px}
+.step h4{font-size:16px;font-weight:600;letter-spacing:-.01em;line-height:1.3;margin-bottom:8px}
+.step p{font-size:13.5px;color:var(--muted);line-height:1.55}
 @media (max-width:1000px){.steps{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:520px){.steps{grid-template-columns:1fr}}
 
 /* experience */
-.timeline{display:grid;gap:0;border-top:1px solid var(--line)}
-.role{display:grid;grid-template-columns:220px 1fr;gap:32px;padding:34px 0;border-bottom:1px solid var(--line)}
-.role .when{font-size:14px;color:var(--dim)}
-.role .when b{display:block;color:var(--text);font-weight:600;font-size:15px;margin-bottom:2px}
-.role h3{font-family:var(--display);font-size:22px;font-weight:600;letter-spacing:-.02em}
-.role h3 small{font-family:var(--body);font-size:15px;font-weight:400;color:var(--muted);margin-left:6px}
+.timeline{border-top:1px solid var(--line)}
+.role{display:grid;grid-template-columns:220px 1fr;gap:32px;padding:32px 0;border-bottom:1px solid var(--line)}
+.role .when{font-size:14px;color:var(--muted)}
+.role .when b{display:block;color:var(--text);font-weight:500;font-size:14.5px;margin-bottom:2px}
+.role h3{font-size:20px;font-weight:600;letter-spacing:-.02em}
+.role h3 small{font-size:15px;font-weight:400;color:var(--muted);margin-left:6px}
 .role .intro{color:var(--muted);margin-top:6px;font-size:15px}
-.role ul{list-style:none;margin-top:14px;display:grid;gap:9px}
-.role li{position:relative;padding-left:20px;color:#c9d0cb;font-size:15px}
-.role li::before{content:"";position:absolute;left:0;top:.72em;width:8px;height:2px;background:var(--accent);border-radius:2px}
-.now{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;background:var(--accent);color:var(--accent-ink);padding:2px 8px;border-radius:999px;margin-left:8px;vertical-align:middle}
-@media (max-width:760px){.role{grid-template-columns:1fr;gap:10px}}
+.role ul{list-style:none;margin-top:14px;display:grid;gap:8px}
+.role li{position:relative;padding-left:18px;color:var(--body);font-size:15px}
+.role li::before{content:"";position:absolute;left:0;top:.7em;width:6px;height:6px;border-radius:50%;background:var(--line-2)}
+.now{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;background:var(--accent-soft);color:var(--accent);padding:2px 8px;border-radius:6px;margin-left:8px;vertical-align:middle}
+@media (max-width:760px){.role{grid-template-columns:1fr;gap:8px}}
 
 /* stack */
-.stack{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
-.stack-row{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px}
-.stack-row h4{font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin-bottom:12px}
-.chips{display:flex;flex-wrap:wrap;gap:8px}
-.chip{font-size:14px;padding:6px 12px;border-radius:999px;background:var(--bg-2);border:1px solid var(--line-2);color:#d7ddd8}
-@media (max-width:760px){.stack{grid-template-columns:1fr}}
-.skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
-.skills .chip{background:transparent}
-.skills .chip.hl{border-color:rgba(198,243,107,.4);color:var(--accent);background:var(--accent-soft)}
+.stack{display:grid;grid-template-columns:repeat(2,1fr);gap:0 48px}
+.stack-row{display:grid;grid-template-columns:170px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
+.stack-row h4{font-size:13.5px;font-weight:500;color:var(--muted);padding-top:5px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;align-items:flex-start;align-content:flex-start}
+.chip{font-size:13.5px;padding:4px 11px;border-radius:7px;background:#fff;border:1px solid var(--line);color:var(--text)}
+@media (max-width:860px){.stack{grid-template-columns:1fr}.stack-row{grid-template-columns:1fr;gap:10px}}
+.skills{display:flex;flex-wrap:wrap;gap:6px;margin-top:32px}
 
 /* creds */
-.creds{display:grid;grid-template-columns:1fr 2fr;gap:22px}
-.cred-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px}
-.cred-card h3{font-family:var(--display);font-size:20px;font-weight:600;letter-spacing:-.02em;margin-bottom:6px}
+.creds{display:grid;grid-template-columns:1fr 2fr;gap:24px}
+.cred-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px}
+.cred-card h3{font-size:18px;font-weight:600;letter-spacing:-.02em;margin-bottom:6px}
 .cred-card p{color:var(--muted);font-size:15px}
-.cert-list{display:grid;grid-template-columns:repeat(2,1fr);gap:0 28px;list-style:none;margin-top:8px}
+.cert-list{display:grid;grid-template-columns:repeat(2,1fr);gap:0 28px;list-style:none}
 .cert-list li{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);font-size:15px}
-.cert-list li span{color:var(--dim);font-size:14px;white-space:nowrap}
+.cert-list li span{color:var(--muted);font-size:14px;white-space:nowrap}
 @media (max-width:860px){.creds{grid-template-columns:1fr}.cert-list{grid-template-columns:1fr}}
 
 /* contact */
-.contact{position:relative;text-align:center;padding:110px 0;overflow:hidden}
-.contact::before{content:"";position:absolute;left:50%;top:50%;width:760px;height:760px;transform:translate(-50%,-50%);background:radial-gradient(closest-side,rgba(198,243,107,.13),transparent 70%);pointer-events:none}
-.contact .wrap{position:relative}
-.contact h2{margin:0 auto;max-width:18ch}
-.contact .sub{margin:16px auto 0}
+.contact{text-align:center;padding:104px 0}
+.contact h2{margin:0 auto;max-width:20ch}
+.contact .sub{margin:14px auto 0}
 .contact .cta{justify-content:center}
-footer{border-top:1px solid var(--line);padding:28px 0;color:var(--dim);font-size:14px}
+footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-size:14px}
 footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 
 /* lightbox */
 dialog{border:0;padding:0;background:transparent;max-width:min(1400px,94vw);max-height:92vh;margin:auto}
-dialog::backdrop{background:rgba(0,0,0,.86);backdrop-filter:blur(4px)}
-dialog img{max-height:86vh;width:auto;border-radius:12px}
-dialog figcaption{color:var(--muted);font-size:14px;text-align:center;margin-top:12px}
-dialog button{position:fixed;top:18px;right:18px;width:42px;height:42px;border-radius:50%;border:1px solid var(--line-2);background:var(--card);color:var(--text);font-size:20px;cursor:pointer}
+dialog::backdrop{background:rgba(17,17,17,.78);backdrop-filter:blur(3px)}
+dialog img{max-height:84vh;width:auto;border-radius:12px;background:#fff}
+dialog figcaption{color:#e5e5e5;font-size:14px;text-align:center;margin-top:12px}
+dialog button{position:fixed;top:18px;right:18px;width:40px;height:40px;border-radius:50%;border:0;background:#fff;color:var(--text);font-size:20px;cursor:pointer}
 
 /* reveal */
-.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
 .reveal.in{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.pill .dot{animation:none}}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
 
 <nav class="nav" id="nav">
   <div class="wrap">
-    <a href="#top" class="brand"><span class="mark">RK</span>Radhakrishnan</a>
+    <a href="#top" class="brand"><img src="assets/img/krishna.jpg" alt="">Radhakrishnan</a>
     <ul>
       <li><a href="#results">Results</a></li>
       <li><a href="#process">Process</a></li>
@@ -198,173 +211,184 @@ dialog button{position:fixed;top:18px;right:18px;width:42px;height:42px;border-r
 
 <header class="hero" id="top">
   <div class="wrap">
-    <span class="pill"><span class="dot"></span>GTM Engineer · ScaleSprint</span>
-    <h1>Outbound systems that turn cold lists into <em>booked revenue.</em></h1>
-    <p class="lede">I'm Radhakrishnan, a GTM Engineer with 3 years of hands-on B2B outbound for clients in the <strong>US, Canada, UK, UAE and Australia</strong>. I run the full motion end to end: ICP research, TAM mapping, list building, enrichment, email infrastructure, copy, launch and deliverability. Right now I'm building GTM automation in Claude Code that ties sourcing, enrichment, qualification and sending into one workflow.</p>
-    <div class="cta">
-      <a href="#results" class="btn btn-primary">See the results
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      <a href="https://www.linkedin.com/in/gtm-krishna" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
-      <a href="mailto:gtmradhakrishna@gmail.com" class="btn btn-ghost">Email me</a>
-    </div>
-    <div class="meta">
-      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Chennai, India · works remote</span>
-      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>US · CAN · UK · UAE · AUS</span>
+    <div class="hero-grid">
+      <div>
+        <span class="status"><span class="dot"></span>GTM Engineer at ScaleSprint</span>
+        <h1>Outbound systems that turn cold lists into <span>booked revenue.</span></h1>
+        <p class="lede">I'm Radhakrishnan, a GTM Engineer with 3 years of hands-on B2B outbound for clients in the US, Canada, UK, UAE and Australia. I run the full motion end to end: ICP research, TAM mapping, list building, enrichment, email infrastructure, copy, launch and deliverability. Right now I'm building GTM automation in Claude Code that ties sourcing, enrichment, qualification and sending into 1 workflow.</p>
+        <div class="cta">
+          <a href="#results" class="btn btn-primary">See the results
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="https://www.linkedin.com/in/gtm-krishna" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
+          <a href="mailto:gtmradhakrishna@gmail.com" class="btn btn-ghost">Email me</a>
+        </div>
+        <div class="meta">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Chennai, India · works remote</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>US · CAN · UK · UAE · AUS</span>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="assets/img/krishna.jpg" alt="Portrait of Radhakrishnan">
+        <div class="badge"><b>~$1M</b>client revenue generated</div>
+      </div>
     </div>
 
     <div class="stats reveal">
-      <div class="stat"><b>~$1<i>M</i></b><span>client revenue generated by systems I've built</span></div>
-      <div class="stat"><b>250<i>K</i></b><span>emails a month sent across clients, no deliverability issues</span></div>
-      <div class="stat"><b>95<i>%</i></b><span>contact coverage from waterfall enrichment before launch</span></div>
-      <div class="stat"><b>~90<i>%</i></b><span>meeting show-up rate with a warm call before every booking</span></div>
+      <div class="stat"><b>~$1M</b><span>client revenue generated by systems I've built</span></div>
+      <div class="stat"><b>250K</b><span>emails a month across clients, with no deliverability issues</span></div>
+      <div class="stat"><b>95%</b><span>contact coverage from waterfall enrichment before launch</span></div>
+      <div class="stat"><b>~90%</b><span>meeting show-up rate with a warm call before every booking</span></div>
     </div>
   </div>
 </header>
 
-<section id="results" class="divider">
+<section id="results" class="alt">
   <div class="wrap">
     <div class="head reveal">
       <p class="eyebrow">Client results</p>
       <h2>Pipeline you can see in the dashboards.</h2>
-      <p class="sub">A sample of campaigns I've owned end to end. Screenshots are straight from the sending platforms. Click any of them to enlarge.</p>
+      <p class="sub">A sample of campaigns I've owned end to end. Screenshots are straight from the sending platforms, and you can click any of them to enlarge it.</p>
     </div>
 
     <div class="cases">
       <article class="case reveal">
-        <div class="body">
-          <span class="tag">US digital marketing agency</span>
-          <h3>Global Growth Networks</h3>
-          <div class="headline">5 clients closed · $180K revenue in 60 days</div>
-          <p>Cold email to a tightly scoped ICP. In month one alone, 1,550 accounts contacted turned into 9 booked appointments and 3 closed clients at $36K each.</p>
-          <div class="kpis">
-            <div class="kpi"><b>1,550</b><span>accounts reached in month 1</span></div>
-            <div class="kpi"><b>17</b><span>qualified leads · 9 meetings</span></div>
-            <div class="kpi"><b>$108K</b><span>revenue closed in month 1</span></div>
+        <div class="case-top">
+          <div class="body">
+            <span class="tag">US digital marketing agency</span>
+            <h3>Global Growth Networks</h3>
+            <div class="headline">5 clients closed · $180K revenue in 60 days</div>
+            <p>Cold email to waterproofing companies, with separate campaigns for each title band (Owner/CEO, VP/Director, Manager) so I could see exactly which persona was landing. The best segments hit up to 15% reply rates with 0 bounces.</p>
+            <div class="kpis">
+              <div class="kpi"><b>1,550</b><span>accounts contacted in month 1</span></div>
+              <div class="kpi"><b>17 → 9</b><span>qualified leads → booked meetings</span></div>
+              <div class="kpi"><b>$108K</b><span>revenue from 3 clients in month 1</span></div>
+            </div>
+          </div>
+          <div class="shot">
+            <img src="assets/img/ggn-analytics.jpg" data-caption="Global Growth Networks: Smartlead global analytics, month 1" alt="Smartlead analytics showing 1,550 leads reached, 5,658 emails sent and 17 positive replies" loading="lazy">
+            <img src="assets/img/smartlead-campaigns.jpg" data-caption="Global Growth Networks: campaigns split by persona, with reply rates up to 15.08%" alt="Smartlead campaign list split by persona showing reply rates between 4.76% and 15.08% with 0 bounces" loading="lazy">
           </div>
         </div>
-        <figure class="shot" data-caption="Global Growth Networks: Smartlead global analytics, month 1">
-          <img src="assets/img/ggn-analytics.jpg" alt="Smartlead analytics for Global Growth Networks showing 1,550 leads reached and 17 positive replies" loading="lazy">
-          <span class="zoom">Click to enlarge</span>
-        </figure>
+        <div class="copy">
+          <div class="copy-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Email copy</div>
+          <div class="email">
+            <p>Hey <span class="var">{{first_name}}</span>, not sure if this is for you but figured I'd ask.</p>
+            <p>So we've been partnering with various <span class="var">{{Job Title}}</span>s of waterproofing companies to add an extra 1-3M in annual rev using our pipeline performance program.</p>
+            <p>We've even put together a detailed Doc that outlines how we'd do something similar for <span class="var">{{company_name}}</span>. Just reply with a simple 'Yes', and I'll send it over.</p>
+          </div>
+        </div>
       </article>
 
       <article class="case flip reveal">
-        <div class="body">
-          <span class="tag">US private equity</span>
-          <h3>Liberty Bay Capital</h3>
-          <div class="headline">113 qualified leads in 90 days</div>
-          <p>Targeted investment bankers using the firm's exact deal criteria, so every conversation started on-thesis rather than on volume.</p>
-          <div class="kpis">
-            <div class="kpi"><b>13K</b><span>emails sent</span></div>
-            <div class="kpi"><b>4.8%</b><span>reply rate</span></div>
-            <div class="kpi"><b>113</b><span>qualified leads</span></div>
+        <div class="case-top">
+          <div class="body">
+            <span class="tag">US private equity</span>
+            <h3>Liberty Bay Capital</h3>
+            <div class="headline">113 qualified leads in 90 days</div>
+            <p>Targeted investment bankers with the firm's exact deal criteria, so every conversation started on-thesis rather than on volume.</p>
+            <div class="kpis">
+              <div class="kpi"><b>13K</b><span>emails sent</span></div>
+              <div class="kpi"><b>4.8%</b><span>reply rate</span></div>
+              <div class="kpi"><b>113</b><span>qualified leads</span></div>
+            </div>
+          </div>
+          <div class="shot">
+            <img src="assets/img/liberty-bay-analytics.jpg" data-caption="Liberty Bay Capital: Instantly analytics, 6-month view (5.06% reply rate across 21.4K sends)" alt="Instantly analytics showing 21.4K sent, 5.06% reply rate and 164 opportunities" loading="lazy">
           </div>
         </div>
-        <figure class="shot" data-caption="Liberty Bay Capital: Instantly analytics, 6-month view (5.06% reply rate across 21.4K sends)">
-          <img src="assets/img/liberty-bay-analytics.jpg" alt="Instantly analytics for Liberty Bay Capital showing 21.4K sent, 5.06% reply rate and 164 opportunities" loading="lazy">
-          <span class="zoom">Click to enlarge</span>
-        </figure>
+        <div class="copy">
+          <div class="copy-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Email copy</div>
+          <div class="email">
+            <p>Hey <span class="var">{{first_name}}</span>,</p>
+            <p>Saw your <span class="var">{{Sector}}</span> sector coverage at <span class="var">{{company_name}}</span>. As a reminder, Liberty Bay Capital acquires non-core carve-outs/divestitures across the U.S. and Canada. We target 20M-200M revenue (up to ~30M EBITDA) and aim to close in under ~60 days. We recently closed a specialty chemicals non-core carve-out from a multinational.</p>
+            <p>Would you be available next week for a chat to discuss your pipeline?</p>
+          </div>
+        </div>
       </article>
 
       <article class="case reveal">
-        <div class="body">
-          <span class="tag">Canada · growth partners</span>
-          <h3>Diamond+</h3>
-          <div class="headline">$168K pipeline · 48 qualified leads in 70 days</div>
-          <p>Multi-segment cold email run through Instantly, with daily opportunity reporting piped straight into the client's team channel.</p>
-          <div class="kpis">
-            <div class="kpi"><b>26.4K</b><span>emails sent</span></div>
-            <div class="kpi"><b>4.9%</b><span>reply rate</span></div>
-            <div class="kpi"><b>48</b><span>opportunities</span></div>
+        <div class="case-top">
+          <div class="body">
+            <span class="tag">US PPC agency</span>
+            <h3>The Bolton Agency</h3>
+            <div class="headline">2 clients closed · $72K added in 30 days</div>
+            <p>The first 5 appointments were booked inside week 1. Leads grew from 16 in month 1 to 42 in month 2 as the campaign scaled.</p>
+            <div class="kpis">
+              <div class="kpi"><b>16</b><span>opportunities in the first 7 days</span></div>
+              <div class="kpi"><b>42</b><span>leads in month 2</span></div>
+              <div class="kpi"><b>$72K</b><span>new deals in 30 days</span></div>
+            </div>
+          </div>
+          <div class="shot">
+            <img src="assets/img/bolton-week1.jpg" data-caption="The Bolton Agency: week 1 in Instantly (16 opportunities)" alt="Instantly analytics for the first week showing 2.6K sent, 4.5% reply rate and 16 opportunities" loading="lazy">
+            <img src="assets/img/bolton-month2.jpg" data-caption="The Bolton Agency: month 2 in Instantly (42 opportunities)" alt="Instantly analytics for month 2 showing 17.7K sent and 42 opportunities" loading="lazy">
           </div>
         </div>
-        <figure class="shot" data-caption="Diamond+: Instantly analytics, Jan 1 – Mar 31">
-          <img src="assets/img/diamond-analytics.jpg" alt="Instantly analytics for Diamond+ showing 26.4K sent, 4.9% reply rate, 48 opportunities worth $168,000" loading="lazy">
-          <span class="zoom">Click to enlarge</span>
-        </figure>
       </article>
 
       <article class="case flip reveal">
-        <div class="body">
-          <span class="tag">US PPC agency</span>
-          <h3>The Bolton Agency</h3>
-          <div class="headline">2 clients closed · $72K added in 30 days</div>
-          <p>The first 5 appointments were booked inside week one. 16 leads in month one grew to 42 in month two as the campaign scaled.</p>
-          <div class="kpis">
-            <div class="kpi"><b>16</b><span>opportunities in the first 7 days</span></div>
-            <div class="kpi"><b>42</b><span>leads in month 2</span></div>
-            <div class="kpi"><b>$72K</b><span>new deals in 30 days</span></div>
+        <div class="case-top">
+          <div class="body">
+            <span class="tag">Canada · PPC agency</span>
+            <h3>Diamond+</h3>
+            <div class="headline">$168K pipeline · 48 qualified leads in 70 days</div>
+            <p>Multi-segment cold email run through Instantly, with daily opportunity reporting sent straight to the client's team channel.</p>
+            <div class="kpis">
+              <div class="kpi"><b>26.4K</b><span>emails sent</span></div>
+              <div class="kpi"><b>4.9%</b><span>reply rate</span></div>
+              <div class="kpi"><b>48</b><span>opportunities</span></div>
+            </div>
+          </div>
+          <div class="shot">
+            <img src="assets/img/diamond-analytics.jpg" data-caption="Diamond+: Instantly analytics, Jan 1 – Mar 31" alt="Instantly analytics showing 26.4K sent, 4.9% reply rate and 48 opportunities worth $168,000" loading="lazy">
           </div>
         </div>
-        <figure class="shot duo" data-caption="The Bolton Agency: week 1 (top) and month 2 (bottom) in Instantly">
-          <img src="assets/img/bolton-week1.jpg" alt="Instantly analytics for The Bolton Agency's first week showing 16 opportunities" loading="lazy">
-          <img src="assets/img/bolton-month2.jpg" alt="Instantly analytics for The Bolton Agency's second month showing 17.7K sent and 42 opportunities" loading="lazy">
-          <span class="zoom">Click to enlarge</span>
-        </figure>
-      </article>
-
-      <article class="case reveal">
-        <div class="body">
-          <span class="tag">How I test</span>
-          <h3>Persona-split campaigns</h3>
-          <div class="headline">Up to 15% reply rates, 0 bounces</div>
-          <p>Every segment gets its own campaign by title band (Owner/CEO, VP/Director, Manager) and by data source. That way I can see exactly which persona and angle is landing, and move volume toward it.</p>
-          <div class="kpis">
-            <div class="kpi"><b>15.1%</b><span>best reply rate (VP/Director)</span></div>
-            <div class="kpi"><b>13.5%</b><span>Owner/CEO reply rate</span></div>
-            <div class="kpi"><b>0</b><span>bounces across 5,300+ sends</span></div>
-          </div>
-        </div>
-        <figure class="shot" data-caption="Smartlead: one client's campaigns split by persona and data source">
-          <img src="assets/img/smartlead-campaigns.jpg" alt="Smartlead campaign list split by persona showing reply rates between 4.76% and 15.08% with zero bounces" loading="lazy">
-          <span class="zoom">Click to enlarge</span>
-        </figure>
       </article>
     </div>
 
     <div class="mini-cases">
-      <div class="mini reveal"><b>~6 clients</b><h4>ScaleSprint, every month</h4><p>I run the entire GTM automation for the agency's client roster, from sourcing to sending.</p></div>
-      <div class="mini reveal"><b>406 leads</b><h4>Digital agency · 5 months</h4><p>Cold email systems built as a freelancer, with zero ad spend.</p></div>
+      <div class="mini reveal"><b>~6 clients</b><h4>ScaleSprint, every month</h4><p>I run the full GTM automation for the agency's client roster, from sourcing to sending.</p></div>
+      <div class="mini reveal"><b>406 leads</b><h4>Digital agency · 5 months</h4><p>Cold email systems built as a freelancer, with $0 ad spend.</p></div>
       <div class="mini reveal"><b>0 → 55K AED</b><h4>Khibra Technologies · 1 month</h4><p>Monthly revenue (~$15K) from a predictable client acquisition system.</p></div>
     </div>
   </div>
 </section>
 
-<section id="process" class="divider">
+<section id="process">
   <div class="wrap">
     <div class="head reveal">
       <p class="eyebrow">The system</p>
-      <h2>Ten steps from blank domain to booked meeting.</h2>
-      <p class="sub">The same playbook runs behind every result above. More and more of it is automated in Claude Code, so the hand-offs between steps don't depend on anyone doing them by hand.</p>
+      <h2>10 steps from blank domain to booked meeting.</h2>
+      <p class="sub">The same playbook runs behind every result above. More of it is automated in Claude Code each month, so hand-offs between steps don't depend on anyone doing them by hand.</p>
     </div>
-    <div class="steps">
-      <div class="step reveal"><h4>Infrastructure setup</h4><p>Domains, inboxes (typically 10 domains / 30 inboxes), warmup and platform config for deliverability.</p></div>
-      <div class="step reveal"><h4>Deep market research</h4><p>Build the GTM context: market, buyers, competitors, triggers.</p></div>
-      <div class="step reveal"><h4>TAM mapping</h4><p>Map industries and sub-industries by size, value and growth potential.</p></div>
-      <div class="step reveal"><h4>ICP validation</h4><p>Prioritise segments, define personas and pin down core pains.</p></div>
-      <div class="step reveal"><h4>Account sourcing</h4><p>Apollo, Clay, Ocean.io lookalikes and industry directories.</p></div>
-      <div class="step reveal"><h4>Targeting keywords</h4><p>Precise keyword lists so database filters return exact-fit companies.</p></div>
-      <div class="step reveal"><h4>Signal-based lead gen</h4><p>Job posts, LinkedIn activity and news triggers, then waterfall enrichment and verification.</p></div>
-      <div class="step reveal"><h4>Offers &amp; messaging</h4><p>Front-end offers and multiple spintax variants built on ICP pains and social proof.</p></div>
-      <div class="step reveal"><h4>Campaign execution</h4><p>Launch within safe volume limits, then monitor replies and deliverability daily.</p></div>
-      <div class="step reveal"><h4>Booking &amp; nurture</h4><p>Handle positive replies, warm-call every meeting and nurture the rest.</p></div>
+    <div class="steps reveal">
+      <div class="step"><h4>Infrastructure setup</h4><p>Domains, inboxes (typically 10 domains / 30 inboxes), warmup and platform config for deliverability.</p></div>
+      <div class="step"><h4>Deep market research</h4><p>Build the GTM context: market, buyers, competitors and triggers.</p></div>
+      <div class="step"><h4>TAM mapping</h4><p>Map industries and sub-industries by size, value and growth potential.</p></div>
+      <div class="step"><h4>ICP validation</h4><p>Prioritise segments, define personas and pin down core pains.</p></div>
+      <div class="step"><h4>Account sourcing</h4><p>Apollo, Clay, Ocean.io lookalikes and industry directories.</p></div>
+      <div class="step"><h4>Targeting keywords</h4><p>Precise keyword lists so database filters return exact-fit companies.</p></div>
+      <div class="step"><h4>Signal-based lead gen</h4><p>Job posts, LinkedIn activity and news triggers, then waterfall enrichment and verification.</p></div>
+      <div class="step"><h4>Offers &amp; messaging</h4><p>Front-end offers and multiple spintax variants built on ICP pains and social proof.</p></div>
+      <div class="step"><h4>Campaign execution</h4><p>Launch within safe volume limits, then monitor replies and deliverability daily.</p></div>
+      <div class="step"><h4>Booking &amp; nurture</h4><p>Handle positive replies, warm-call every meeting and nurture the rest.</p></div>
     </div>
   </div>
 </section>
 
-<section id="experience" class="divider">
+<section id="experience" class="alt">
   <div class="wrap">
     <div class="head reveal">
       <p class="eyebrow">Experience</p>
-      <h2>Seven years in revenue, three in GTM engineering.</h2>
+      <h2>7 years in revenue, 3 in GTM engineering.</h2>
     </div>
     <div class="timeline">
       <div class="role reveal">
         <div class="when"><b>Jul 2026 – Present</b>Dubai, UAE · Remote</div>
         <div>
-          <h3>GTM Engineer <small>ScaleSprint</small><span class="now">Now</span></h3>
+          <h3>GTM Engineer <small>ScaleSprint</small><span class="now">Current</span></h3>
           <ul>
-            <li>Building a GTM automation system in Claude Code &amp; VS Code that connects the full tech stack into one workflow, removing manual hand-offs between sourcing, enrichment, qualification and sending.</li>
+            <li>Building a GTM automation system in Claude Code &amp; VS Code that connects the full tech stack into 1 workflow, removing manual hand-offs between sourcing, enrichment, qualification and sending.</li>
             <li>Sending around 250K emails a month across clients without deliverability issues.</li>
             <li>Researching and scoring accounts to build ICP-fit target lists across client campaigns.</li>
             <li>Writing and testing outbound copy, and tracking which angles land and which get ignored.</li>
@@ -382,7 +406,7 @@ dialog button{position:fixed;top:18px;right:18px;width:42px;height:42px;border-r
             <li>Set up cold email infrastructure from scratch, typically 10 domains and 30 inboxes per client, including warmup and monitoring.</li>
             <li>Ran waterfall enrichment across Prospeo, Leadmagic and others to reach 95% contact coverage before any sequence went live.</li>
             <li>Built Clay workflows for signal-based targeting (LinkedIn activity, job posts, news triggers) plus Ocean.io lookalike modelling.</li>
-            <li>LinkedIn alongside email: 90 requests → 25 accepts → 24 conversations → 5 booked meetings in week one.</li>
+            <li>LinkedIn alongside email: 90 requests → 25 accepts → 24 conversations → 5 booked meetings in week 1.</li>
             <li>Added a warm call before every booked meeting, which took show-up rates to around 90%.</li>
           </ul>
         </div>
@@ -392,7 +416,7 @@ dialog button{position:fixed;top:18px;right:18px;width:42px;height:42px;border-r
         <div>
           <h3>Email Marketing Specialist</h3>
           <ul>
-            <li>Built cold email systems that generated 406 leads for a digital agency over five months with zero ad spend.</li>
+            <li>Built cold email systems that generated 406 leads for a digital agency over 5 months with $0 ad spend.</li>
             <li>Designed cold email and LinkedIn funnels delivering 10–20 booked calls a month for B2B clients.</li>
             <li>Ran outbound audits and 1:1 offer coaching to improve client close rates.</li>
           </ul>
@@ -413,7 +437,7 @@ dialog button{position:fixed;top:18px;right:18px;width:42px;height:42px;border-r
         <div>
           <h3>Business Development Manager <small>Khibra Technologies</small></h3>
           <ul>
-            <li>Scaled the agency from 0 to 55K AED (about $15K) in monthly revenue in one month.</li>
+            <li>Scaled the agency from 0 to 55K AED (about $15K) in monthly revenue in 1 month.</li>
             <li>Closed multiple AED 50K deals covering web design and ERP implementation for UAE SMEs.</li>
             <li>Managed the pipeline from inbound handling through consultative discovery to close.</li>
           </ul>
@@ -423,29 +447,29 @@ dialog button{position:fixed;top:18px;right:18px;width:42px;height:42px;border-r
   </div>
 </section>
 
-<section id="stack" class="divider">
+<section id="stack">
   <div class="wrap">
     <div class="head reveal">
       <p class="eyebrow">Tech stack</p>
       <h2>The tools behind the pipeline.</h2>
     </div>
-    <div class="stack">
-      <div class="stack-row reveal"><h4>Build &amp; orchestration</h4><div class="chips"><span class="chip">Claude Code</span><span class="chip">VS Code</span><span class="chip">Codex</span><span class="chip">Make</span><span class="chip">n8n</span></div></div>
-      <div class="stack-row reveal"><h4>Lead databases</h4><div class="chips"><span class="chip">Apollo</span><span class="chip">Sales Navigator</span><span class="chip">AI Ark</span><span class="chip">Ocean.io</span><span class="chip">GetLeads</span><span class="chip">Outscraper</span><span class="chip">Exa</span></div></div>
-      <div class="stack-row reveal"><h4>Scraping &amp; research</h4><div class="chips"><span class="chip">Apify</span><span class="chip">Serper.dev</span><span class="chip">Spider.cloud</span><span class="chip">Instant Data Scraper</span></div></div>
-      <div class="stack-row reveal"><h4>Waterfall enrichment</h4><div class="chips"><span class="chip">Clay</span><span class="chip">Prospeo</span><span class="chip">Leadmagic</span></div></div>
-      <div class="stack-row reveal"><h4>AI qualification</h4><div class="chips"><span class="chip">Claude</span><span class="chip">OpenAI</span></div></div>
-      <div class="stack-row reveal"><h4>Email verification</h4><div class="chips"><span class="chip">ZeroBounce</span><span class="chip">MillionVerifier</span><span class="chip">BounceBan</span></div></div>
-      <div class="stack-row reveal"><h4>Sending &amp; outreach</h4><div class="chips"><span class="chip">Instantly</span><span class="chip">Smartlead</span><span class="chip">PlusVibe</span><span class="chip">Email Bison</span><span class="chip">HeyReach</span></div></div>
-      <div class="stack-row reveal"><h4>CRM</h4><div class="chips"><span class="chip">HubSpot</span><span class="chip">Attio</span></div></div>
+    <div class="stack reveal">
+      <div class="stack-row"><h4>Build &amp; orchestration</h4><div class="chips"><span class="chip">Claude Code</span><span class="chip">VS Code</span><span class="chip">Codex</span><span class="chip">Make</span><span class="chip">n8n</span></div></div>
+      <div class="stack-row"><h4>Lead databases</h4><div class="chips"><span class="chip">Apollo</span><span class="chip">Sales Navigator</span><span class="chip">AI Ark</span><span class="chip">Ocean.io</span><span class="chip">GetLeads</span><span class="chip">Outscraper</span><span class="chip">Exa</span></div></div>
+      <div class="stack-row"><h4>Scraping &amp; research</h4><div class="chips"><span class="chip">Apify</span><span class="chip">Serper.dev</span><span class="chip">Spider.cloud</span><span class="chip">Instant Data Scraper</span></div></div>
+      <div class="stack-row"><h4>Waterfall enrichment</h4><div class="chips"><span class="chip">Clay</span><span class="chip">Prospeo</span><span class="chip">Leadmagic</span></div></div>
+      <div class="stack-row"><h4>AI qualification</h4><div class="chips"><span class="chip">Claude</span><span class="chip">OpenAI</span></div></div>
+      <div class="stack-row"><h4>Email verification</h4><div class="chips"><span class="chip">ZeroBounce</span><span class="chip">MillionVerifier</span><span class="chip">BounceBan</span></div></div>
+      <div class="stack-row"><h4>Sending &amp; outreach</h4><div class="chips"><span class="chip">Instantly</span><span class="chip">Smartlead</span><span class="chip">PlusVibe</span><span class="chip">Email Bison</span><span class="chip">HeyReach</span></div></div>
+      <div class="stack-row"><h4>CRM</h4><div class="chips"><span class="chip">HubSpot</span><span class="chip">Attio</span></div></div>
     </div>
     <div class="skills reveal">
-      <span class="chip hl">GTM Automation</span><span class="chip hl">AI &amp; Agentic Workflows</span><span class="chip hl">Clay Workflow Development</span><span class="chip">Outbound Infrastructure</span><span class="chip">Waterfall Enrichment</span><span class="chip">Web Scraping &amp; Data Extraction</span><span class="chip">ICP Research &amp; TAM Mapping</span><span class="chip">Signal-Based Targeting</span><span class="chip">Lead Scoring</span><span class="chip">ABM Strategy</span><span class="chip">List Building</span><span class="chip">Multi-Touch Sequencing</span><span class="chip">Cold Email Copywriting</span><span class="chip">LinkedIn Outreach Automation</span><span class="chip">Campaign Optimisation</span><span class="chip">CRM Operations</span><span class="chip">Pipeline Reporting</span>
+      <span class="chip">GTM Automation</span><span class="chip">AI &amp; Agentic Workflows</span><span class="chip">Clay Workflow Development</span><span class="chip">Outbound Infrastructure</span><span class="chip">Waterfall Enrichment</span><span class="chip">Web Scraping &amp; Data Extraction</span><span class="chip">ICP Research &amp; TAM Mapping</span><span class="chip">Signal-Based Targeting</span><span class="chip">Lead Scoring</span><span class="chip">ABM Strategy</span><span class="chip">List Building</span><span class="chip">Multi-Touch Sequencing</span><span class="chip">Cold Email Copywriting</span><span class="chip">LinkedIn Outreach Automation</span><span class="chip">Campaign Optimisation</span><span class="chip">CRM Operations</span><span class="chip">Pipeline Reporting</span>
     </div>
   </div>
 </section>
 
-<section id="credentials" class="divider">
+<section id="credentials" class="alt">
   <div class="wrap">
     <div class="head reveal">
       <p class="eyebrow">Education &amp; certifications</p>
@@ -471,7 +495,7 @@ dialog button{position:fixed;top:18px;right:18px;width:42px;height:42px;border-r
   </div>
 </section>
 
-<section id="contact" class="contact divider">
+<section id="contact" class="contact">
   <div class="wrap reveal">
     <p class="eyebrow">Let's talk</p>
     <h2>Need pipeline that doesn't depend on referrals?</h2>
@@ -507,7 +531,7 @@ dialog button{position:fixed;top:18px;right:18px;width:42px;height:42px;border-r
   if ('IntersectionObserver' in window) {
     const io = new IntersectionObserver(entries => entries.forEach(e => {
       if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
-    }), {threshold:.12, rootMargin:'0px 0px -40px 0px'});
+    }), {threshold:.1, rootMargin:'0px 0px -40px 0px'});
     els.forEach(el => io.observe(el));
   } else els.forEach(el => el.classList.add('in'));
 
@@ -515,7 +539,7 @@ dialog button{position:fixed;top:18px;right:18px;width:42px;height:42px;border-r
   const dImg = dlg.querySelector('img'), dCap = dlg.querySelector('figcaption');
   document.querySelectorAll('.shot img').forEach(img => img.addEventListener('click', () => {
     dImg.src = img.src; dImg.alt = img.alt;
-    dCap.textContent = img.closest('.shot').dataset.caption || '';
+    dCap.textContent = img.dataset.caption || '';
     if (dlg.showModal) dlg.showModal(); else window.open(img.src, '_blank');
   }));
   dlg.addEventListener('click', e => { if (e.target === dlg || e.target.tagName === 'BUTTON') dlg.close(); });
