@@ -88,14 +88,16 @@ h1 em{font-style:italic;color:var(--accent)}
 section{padding:88px 0}
 .alt{background:var(--surface)}
 .eyebrow{font-family:var(--mono);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
-h2{font-family:var(--serif);font-size:clamp(30px,3.8vw,44px);line-height:1.12;letter-spacing:-.015em;font-weight:500;max-width:22ch}
+h2{font-family:var(--serif);font-size:clamp(30px,3.8vw,44px);line-height:1.12;letter-spacing:-.015em;font-weight:500}
 .sub{color:var(--muted);max-width:64ch;margin-top:12px}
 .head{margin-bottom:44px}
 
 /* case studies */
 .cases{display:grid;gap:28px}
 .case{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
-.case-head{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;padding:34px 34px 30px;align-items:end}
+.case-head{display:grid;grid-template-columns:1.2fr 1fr;gap:0 40px;padding:34px 34px 30px;align-items:end}
+.case-head>div:first-child{display:contents}
+.case-head .tag,.case-head h3,.case-head .headline{grid-column:1/-1;justify-self:start}
 .tag{display:inline-block;font-family:var(--mono);font-size:11.5px;color:var(--muted);border:1px solid var(--line-2);border-radius:6px;padding:3px 8px;margin-bottom:16px;text-transform:uppercase;letter-spacing:.05em}
 .case h3{font-family:var(--sans);font-size:15px;font-weight:600;color:var(--muted);letter-spacing:0}
 .case .headline{font-family:var(--serif);font-size:clamp(26px,3vw,36px);font-weight:500;letter-spacing:-.015em;color:var(--text);line-height:1.15;margin:6px 0 12px}
@@ -120,7 +122,8 @@ h2{font-family:var(--serif);font-size:clamp(30px,3.8vw,44px);line-height:1.12;le
 .email p + p{margin-top:10px}
 .var{font-family:var(--mono);font-size:12.5px;color:var(--accent-2);background:var(--accent-soft);border-radius:5px;padding:1px 6px;white-space:nowrap}
 @media (max-width:900px){
-  .case-head{grid-template-columns:1fr;gap:22px;padding:26px 20px 22px}
+  .case-head{grid-template-columns:1fr;gap:0;padding:26px 20px 22px}
+  .case-head .kpis{margin-top:22px}
   .shots{padding:0 20px 24px}
   .copy{padding:22px 20px 26px}
   .kpi b{font-size:20px}
@@ -179,7 +182,7 @@ h2{font-family:var(--serif);font-size:clamp(30px,3.8vw,44px);line-height:1.12;le
 .hire{position:relative;padding:112px 0;overflow:hidden;text-align:center}
 .hire::before{content:"";position:absolute;left:50%;top:50%;width:900px;height:900px;transform:translate(-50%,-50%);background:radial-gradient(closest-side,rgba(217,119,87,.15),transparent 70%);pointer-events:none}
 .hire .wrap{position:relative}
-.hire h2{font-size:clamp(38px,6vw,72px);line-height:1.05;letter-spacing:-.025em;max-width:16ch;margin:0 auto}
+.hire h2{font-size:clamp(34px,5vw,62px);line-height:1.05;letter-spacing:-.025em;margin:0 auto}
 .hire h2 em{font-style:italic;color:var(--accent)}
 .hire .sub{margin:20px auto 0;font-size:17.5px;color:var(--body);max-width:58ch}
 .hire .cta{justify-content:center;margin-top:34px}
@@ -372,6 +375,50 @@ dialog button{position:fixed;top:18px;right:18px;width:40px;height:40px;border-r
           <figure class="shot">
             <img src="assets/img/diamond-analytics.jpg" alt="Instantly analytics showing 26.4K sent, 52.3% open rate, 4.9% reply rate and 48 opportunities worth $168,000" loading="lazy">
             <figcaption><span><b>Instantly analytics (Jan 1 – Mar 31).</b> 26.4K emails at a 52.3% open rate and 4.9% reply rate produced 48 opportunities worth $168,000 in pipeline.</span></figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article class="case reveal">
+        <div class="case-head">
+          <div>
+            <span class="tag">Automation client · ScaleSprint</span>
+            <h3>ScaleSprint automation client</h3>
+            <div class="headline"><em>31 opportunities</em> and $31K pipeline in 3 months</div>
+            <p>A fully automated outbound engine I run at ScaleSprint, from sourcing and enrichment through to sending, at a volume of 37.7K sequences in 3 months.</p>
+          </div>
+          <div class="kpis">
+            <div class="kpi"><b>37.7K</b><span>sequences started</span></div>
+            <div class="kpi"><b>1,153</b><span>total replies (3.01%)</span></div>
+            <div class="kpi"><b>$31K</b><span>pipeline from 31 opportunities</span></div>
+          </div>
+        </div>
+        <div class="shots">
+          <figure class="shot">
+            <img src="assets/img/scalesprint-automation.jpg" alt="Campaign analytics for the last 3 months showing 37.7K sequences started, 3.01% reply rate, 2.73% positive reply rate and 31 opportunities worth $31K" loading="lazy">
+            <figcaption><span><b>Last 3 months (Jul 22 – Sep 29).</b> 37.7K sequences started with a 3.01% reply rate (1,153 replies) and a 2.73% positive reply rate, producing 31 opportunities worth $31K.</span></figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article class="case reveal">
+        <div class="case-head">
+          <div>
+            <span class="tag">LinkedIn outreach · Sendpilot</span>
+            <h3>LinkedIn post campaign</h3>
+            <div class="headline"><em>$51K pipeline</em> from 186 connection requests</div>
+            <p>A LinkedIn campaign run through Sendpilot: connection request, then a follow-up message once accepted. 31% of messaged prospects replied.</p>
+          </div>
+          <div class="kpis">
+            <div class="kpi"><b>45%</b><span>connection acceptance (84 of 186)</span></div>
+            <div class="kpi"><b>31%</b><span>reply rate (26 replies)</span></div>
+            <div class="kpi"><b>17</b><span>opportunities worth $51K</span></div>
+          </div>
+        </div>
+        <div class="shots">
+          <figure class="shot">
+            <img src="assets/img/linkedin-campaign.jpg" alt="Sendpilot LinkedIn campaign dashboard showing 186 connections sent, 84 accepted, 85 messages sent, 26 replies and 17 opportunities worth $51,000" loading="lazy">
+            <figcaption><span><b>Sendpilot, 30 days (Apr 20 – May 20).</b> 186 connection requests, 84 accepted (45%), 85 messages sent and 26 replies (31%), producing 17 opportunities worth $51,000.</span></figcaption>
           </figure>
         </div>
       </article>
